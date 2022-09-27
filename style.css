@@ -1,0 +1,60 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background:rgba(50, 130, 3, 0.5) ;
+    border-radius: 5px;
+  }
+  
+  /* For the aesthetics */
+  .nav-button{
+    position: sticky;
+    color:rgb(270, 245, 220);
+    font-size: x-large;
+    padding: 5px;
+  }
+  .nav-button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .nav-button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .nav-button:hover span {
+    padding-right: 25px;
+  }
+  .nav-button:hover span::after {
+    opacity: 1;
+    right: 0;
+  }
+  .about-project-contact-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: rgba(50, 130, 3, 0.5);
+  }
+  .about-container{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .project-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .titlebox{
+    display: flex;
+  }
+  .textbox{
+    display: flex;
+  }
