@@ -3,15 +3,16 @@
 }
 .nav {
     display: flex;
-    overflow: auto;
     background-color: rgba(255, 254, 251, 0.5);
     border-radius: 5px;
+    justify-content: flex-end;
   }
 .sticky{
   position: fixed;
-  left: 1000px;;
-  top: 0;
+  top:0;
+  left: 1000px;
 }
+
 .splash-page{
   display: flex;
   flex-direction: column;
@@ -19,10 +20,8 @@
 }
   /* For the aesthetics */
   .nav-button{
-    position: sticky;
     color:rgb(14, 14, 14);
     font-size: large;
-    padding: 5px;
     padding-left: 50px;
   }
   .nav-button span{
@@ -63,7 +62,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    padding-left: 100px;
     margin: 20px;
     font-size: 40px;
   }
@@ -71,26 +69,87 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-left: 100px;
+    padding-left: 45px;
     margin: 20px;
     font-size: 30px;
   }
-  .fourthTitleBox{
-    display: flex;
-  }
   .textBox{
     display: flex;
-    font-size: 25px;
-    max-width: 50%;
-    margin: 20px;
+    font-size: 20px;
+    text-align: start;
   }
-  .img{
-    max-width: 25%;
+  .personalImg{
+    width: 30%;
     border-radius: 5px;
+    height: auto;
   }
   .Wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px;
+  }
+  .miniWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    max-width: 40%;
+  }
+  .contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+  }
+  .iconBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .icon{
+    width: 40px;
+  }
+  .icon:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  #github{
+    padding: 20px;
+  }
+  #linkedin{
+    padding: 20px;
+  }
+  #instagram{
+    padding: 20px;
+  }
+  #xText{
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  .listBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  button{
+    border-radius: 5px;
+    border: transparent;
+    background-color: #e16259;
+    color:white;
+    margin: 10px;
+    font-weight: bold;
+  }
+  button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .buttonWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
   }

@@ -11,34 +11,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="splash-page">
-        <div class="navbar">
-            <div class="nav sticky">
+    <div class="navbar">
+        <div class="nav sticky">
+            <a href="Mainpage.html">
                 <div class="nav-button"><span>About</span></div>
+            </a>
+            <a href="project.html">
                 <div class="nav-button"><span>Project</span></div>
+            </a>
+            <a href="#Contact">
                 <div class="nav-button"><span>Contact</span></div>
-            </div>
-        </div>
-        <div class="about-container">
-            <h1 class="globalTitleBox">Hi, I'm Curtis</h1>
-            <h2 class="secondTitleBox">About me:
-                <div class="Wrapper">
-                    <img class = "img" src="img.JPG" alt="My image">
-                    <p class="textBox"> Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
-                </div>
-            </h2>
-            <h3 class="secondTitleBox">Fun fact: 
-                <div class="Wrapper">
-                    <p class="textBox"> Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
-                </div>
-            </h3>
-            <h4 class="thirdTitleBox">Contact:
-                
-            </h4>
-
+            </a>
         </div>
     </div>
-
+    <div class="about-container">
+        <h1 class="globalTitleBox">Hi, I'm Curtis</h1>
+        <h2 class="secondTitleBox">
+            <div class="Wrapper">
+                <img class = "personalImg" src="img.JPG" alt="My image">
+                <div class="miniWrapper">
+                    <p class="textBox" id= "xText"> About me:</p>
+                    <p class="textBox"> I'm a sophomore at UC Berkeley, studying computer science. I'm from ShenZhen, now living in Emeryville.</p>
+                    <p class="textBox">Currently open to any software engineer internship opportunities.</p>
+                    <p class="textBox"id= "xText">In my spare time:</p>
+                    <ul class="listBox">
+                        <li>Play basketball 🏀</li>
+                        <li>FIFA on XBOX 🎮</li>
+                        <li>Treat myself some snacks 🍟 </li>
+                        <li>Hanging around and try to pet some puppies 🐾</li>
+                    </ul>
+                    <p class="textBox">Let's be friends! Feel free to reach out with anything! </p>
+                </div>
+            </div>
+        </h2>
+        <h3 class="secondTitleBox">
+            <div class="buttonWrapper">
+                <p class="textBox">Please check out my work! I'd love to hear from you!</p>
+                <button onclick="alert('Actually I don\'t have a form for you to fill out.')">Leave your thought</button>
+            </div>
+        </h3>
+        <h4 class="contactContainer" id="Contact">
+            <!-- <div class="thirdTitleBox"> Contact </div> -->
+            <p style="font-size: 25px;"> Contact </p>
+            <div class="iconBox">
+                <a href="https://github.com/curtisyu0411" target="_blank">
+                    <img class = "icon" src="github.png" alt="github icon" id="github" >
+                </a>
+                <a href="https://www.linkedin.com/in/curtisyu0411/" target="_blank">
+                    <img class = "icon" src="linkedin.png" alt="linkedin icon" id="linkedin" >
+                </a>
+                <a href="https://www.instagram.com/curtis_yu_0411/" target="_blank">
+                    <img class = "icon" src="instagram.png" alt="instagram icon" id = "instagram">
+                </a>
+            </div>
+        </h4>
+    </div>
 </body>
 </html>
