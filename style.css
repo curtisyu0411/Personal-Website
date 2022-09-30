@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin: 20px;
     font-size: 40px;
   }
@@ -138,6 +138,8 @@
 
   }
   .formButton{
+    display: flex;
+    align-items: center;
     border-radius: 5px;
     border: transparent;
     background-color: #e16259;
@@ -145,8 +147,6 @@
     margin: 10px;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px;
-    padding-top: 12px;
     font-size: 15px;
   }
   .formButton:hover{
@@ -197,4 +197,18 @@
   .formContainer{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .formInput{
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .typeInput{
+    width: 100%;
+  }
+  #feedbackBody{
+    height: 70px;
   }
